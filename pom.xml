@@ -109,20 +109,18 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <Specification-Title>${project.name}</Specification-Title>
+                        <Specification-Vendor>${project.organization.name}</Specification-Vendor>
+                        <Specification-Version>${project.version}</Specification-Version>
+                        <Implementation-Title>${project.artifactId}</Implementation-Title>
+                        <Implementation-Vendor>${project.groupId}</Implementation-Vendor>
+                        <Implementation-Version>${project.version}</Implementation-Version>
                         <Bundle-SymbolicName>org.protege.owlapi.extensions</Bundle-SymbolicName>
                         <Bundle-Vendor>The Protege Development Team</Bundle-Vendor>
                         <Export-Package>org.protege.owlapi.*</Export-Package>
                     </instructions>
                 </configuration>
-                <!--<executions>
-                    <execution>
-                        <id>bundle-manifest</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>manifest</goal>
-                        </goals>
-                    </execution>
-                </executions> -->
+
             </plugin>
 
             <!-- Execution of unit tests generates output for reporting plugin -->
